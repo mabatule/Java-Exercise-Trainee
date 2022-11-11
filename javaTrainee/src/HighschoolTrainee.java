@@ -3,14 +3,15 @@ import java.util.Scanner;
 public class HighschoolTrainee {
     public static void main(String[] args) {
         int Inputname;
-        System.out.println("Pick a number between 1 and 10");
-        Scanner Num = new Scanner(System.in);
-        Inputname = Num.nextInt();
-        if(Inputname <5){
-            System.out.println("Enjoy the good luck");
-        }else {
-            System.out.println("Your show selection will make your very happy");
-        }
 
+        System.out.println("Welcome and thank you for your rating");
+        Scanner rd = new Scanner(System.in);
+        int score = rd.nextInt();
+        if ( score > 70){
+            System.out.println("Approved");
+        }
+        else {
+           System.out.println("Disapprove");
+        }
     }
 }
